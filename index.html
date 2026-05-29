@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="music-player">
+            
+            <div class="song-info">
+             <h1 class="song-name">Travelers</h1>
+             <p class="artist-name">Andrew Prahlow</p>
+           </div>
+
+        <audio id="audio-player" loop>
+          <source src="travelers.mp3" type="audio/mpeg">
+        </audio>
+          
+
+            <div class="disk">
+                <div class="active-song-img"></div>
+                <div class="disk-center"></div>
+            </div>
+
+            <div class="song-slider">
+                <input type="range" value="0" class="seek-bar">
+                <span class="current-time">00:00</span>
+                <span class="song-duration">03:30</span>
+            </div>
+
+            <div class="controls">
+                <button class="btn backward-btn"><i class="fas fa-backward"></i></button>
+                <button class="play-btn pause">
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="btn forward-btn"><i class="fas fa-forward"></i></button>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
